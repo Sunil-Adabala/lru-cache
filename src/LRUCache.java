@@ -29,9 +29,7 @@ public class LRUCache {
         Node nextNode = this.head.next;
         Node newNode = new Node(key, value, head, nextNode);
         this.head.next = newNode;
-        nextNode.prev = newNode;  
-//        newNode.prev = this.head;
-//        newNode.next = nextNode;
+        nextNode.prev = newNode;
         return newNode;
     }
 
